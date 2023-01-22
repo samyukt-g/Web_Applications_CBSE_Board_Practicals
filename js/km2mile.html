@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>km to mile</title>
+    </head>
+    <body>
+        <form>
+            <input type="number" id="km">Enter Kilometers <br>
+            <button type="button" onclick="function1()">Click to convert to miles</button>
+        </form>
+        <form>
+            <input type ="number" id="mtr">Enter Miles<br>
+            <button type="button" onclick="function2()">Click to convert to kilometers</button>
+        </form>
+        <script>
+            function function1(){
+                var km = document.getElementById("km").value
+                var mile = km*0.6
+                alert(mile)
+            }
+            function function2(){
+                var mle = document.getElementById("mtr").value
+                var kilo = mle*1.6
+                alert(kilo)
+            }
+        </script>
+    </body>
+</html>
