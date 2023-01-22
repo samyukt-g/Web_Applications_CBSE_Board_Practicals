@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>WAP to generate Fibonacci series of ‘n’ terms</p>
+    <p id="result"></p>
+    <script>
+var n = parseInt(prompt('Enter a number'))
+var fib = [0, 1]
+for (let i = fib.length; i < n; i++) {
+    fib[i] = fib[i-1] + fib[i-2]
+}
+document.getElementById('result').innerHTML = 'n = ' + n + '<br>' + fib;
+    </script>
+</body>
+</html>

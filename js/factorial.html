@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>WAP to find and display the factorial of a given number</p>
+    <p id="result"></p>
+    <script>
+var uin = parseInt(prompt('Enter a number'));
+var result = uin;
+for (let i = 1; i < uin; i++) {
+    result *= i;
+}
+document.getElementById('result').innerHTML = 'Factorial of ' + uin + ' is ' + result
+    </script>
+</body>
+</html>
